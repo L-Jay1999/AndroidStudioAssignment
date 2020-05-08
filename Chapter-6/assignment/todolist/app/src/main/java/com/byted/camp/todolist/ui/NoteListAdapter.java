@@ -62,6 +62,7 @@ public class NoteListAdapter extends RecyclerView.Adapter<NoteViewHolder> {
                 holder.itemView.setBackgroundColor(Color.BLUE);
                 break;
             default:
+                holder.itemView.setBackgroundColor(Color.WHITE);
                 break;
         }
         holder.bind(notes.get(pos));

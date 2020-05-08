@@ -120,12 +120,12 @@ public class MainActivity extends AppCompatActivity {
 
     public class Adapter {
 
-        public void deleteNote(Note note){
+        public void deleteNote(Note note) {
             todoDatabase.noteOperator().deleteNote(note);
             notesAdapter.refresh(todoDatabase.noteOperator().getAll());
         }
 
-        public void updateNote(Note note){
+        public void updateNote(Note note) {
             todoDatabase.noteOperator().updateNote(note);
             notesAdapter.refresh(todoDatabase.noteOperator().getAll());
         }
